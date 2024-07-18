@@ -26,7 +26,7 @@ class ProductOfArrayExceptSelfTest {
 
   static Stream<Arguments> testProductExceptSelf() {
     return Stream.of(
-//        Arguments.arguments(new int[] {1, 2, 3, 4}, new int[] {24, 12, 8, 6}),
+        Arguments.arguments(new int[] {1, 2, 3, 4}, new int[] {24, 12, 8, 6}),
         Arguments.arguments(new int[] {0, 2, 3, 4}, new int[] {24, 0, 0, 0}),
         Arguments.arguments(new int[] {1, 0}, new int[] {0, 1}),
         Arguments.arguments(new int[] {0, 0}, new int[] {0, 0}),
