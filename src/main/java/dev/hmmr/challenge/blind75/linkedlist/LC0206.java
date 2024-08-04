@@ -1,24 +1,24 @@
 package dev.hmmr.challenge.blind75.linkedlist;
 
-/** Definition for singly-linked list. */
-class ListNode {
-  int val;
-  ListNode next;
-
-  ListNode() {}
-
-  ListNode(int val) {
-    this.val = val;
-  }
-
-  ListNode(int val, ListNode next) {
-    this.val = val;
-    this.next = next;
-  }
-}
-
 public class LC0206 {
-  public ListNode reverseListIteratively(ListNode head) {
+  /** Definition for singly-linked list. */
+  static class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode() {}
+
+    ListNode(int val) {
+      this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+      this.val = val;
+      this.next = next;
+    }
+  }
+
+  ListNode reverseListIteratively(ListNode head) {
     // will be the new head of the reversed list
     ListNode last = null;
     // current node which will be processed
@@ -38,7 +38,7 @@ public class LC0206 {
   }
 
   // recursively
-  public ListNode reverseList(ListNode head) {
+  ListNode reverseList(ListNode head) {
     // if the list is empty or has only one node, it's already reversed
     if (head == null || head.next == null) {
       return head;
